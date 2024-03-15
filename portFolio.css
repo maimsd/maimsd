@@ -13,7 +13,7 @@ body{
 }
 #header{
     width: 100%;
-    height: 950px;
+    height: 750px;
     background-image: url(./images/background_img/homepage_backgroung_img5.jpg);
     background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@ body{
 /* ----------------------------------------------------------------------------------------------------- */
 
 .container{
-    padding: 0px 8%;
+    padding: 0px 1%;
 }
 nav{
     display: flex;
@@ -43,7 +43,6 @@ nav{
 .logo{
     max-width: 150px;
     max-height: 150px;
-
     /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
 }
 nav ul li{
@@ -72,9 +71,8 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .headerText{
-    margin-top: 15%;
     font-size: 30px;
-    margin-top: 300px;
+    margin-top: 335px;
 }
 .headerText h1{
     margin-top: 20px;
@@ -83,12 +81,12 @@ nav ul li a:hover::after{
     max-width: 1000px;
 }
 .headerText p {
-    color: rgba(255, 255, 255, 0.9); /* Use an alpha value to make the text slightly transparent */
+    color: #ffffff; /* Use an alpha value to make the text slightly transparent */
     font-size: 20px;
     padding: 10px;
     max-width: 1000px;
     margin-top: 60px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    text-shadow: 2px 2px 4px #000000; /* Add a subtle text shadow */
 }
 .headerText h1 span{
     color: #00d0ff;
@@ -107,14 +105,17 @@ nav ul li a:hover::after{
 }
 .aboutColumn1{
     flex-basis: 35%;
+    margin-left: 55px !important;
 }
 .aboutColumn1 img {
     max-height: 100%;
     max-width: 350px;
-    object-fit: cover; /* Ensure the image covers the container */
+    object-fit: cover;
+    margin-left: -20px;
 }
 .aboutColumn2{
     flex-basis: 55%;
+    margin-right: 55px !important;
 }
 .subTitle{
     font-size: 50px;
@@ -158,7 +159,7 @@ nav ul li a:hover::after{
     list-style: none;
     margin: 10px 0;
     color: rgb(150, 150, 150);
-    font-size: 14px;
+    font-size: 15px;
 }
 .tabContents ul li span{
     color: #00d0ff;
@@ -294,23 +295,72 @@ nav ul li a:hover::after{
     border: 2px solid rgb(255, 255, 255);
 }
 
+/* ---------- Contact ----------*/
 
+.contactLeft{
+    flex-basis: 35%;
+    margin-left: 20px;
+}
 .contactRight{
+    flex-basis: 60%;
+}
+.contactLeft p{
+    margin-top: 30px;
+    color: white;
+}
+.contactLeft P i{
+    /* color: rgb(255, 0, 0) ; */
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.contactLeft_mail{
+    color: rgb(255, 0, 0) ;
+}
+
+.contactLeft_phone{
+    color: green !important;
+}
+
+
+.contactLeft, .contactRight{
+    flex-basis: 100%;
+}
+
+/* .socialMediaIcons {
+    display: flex;
+    justify-content: center; 
+} */
+
+.socialMediaIcons a {
+    display: inline-block; /* Make the anchor tags behave as block elements */
+    /* padding: 10px;  */
+}
+
+.socialMediaIcons a i {
+    font-size: 30px; /* Set the font size of the icons */
+    color: #1500ff;
+    margin-top: 30px;
+}
+
+/* .contactRight{
     margin-left: 250px;
     max-width: 750px;
     padding-top: 100px;
-}
+} */
 
-.contactRight h1{
+/* .contactRight h1{
     margin-left: 300px;
     color: #00d0ff;
     width: 250px;
-}
+}*/
 
-.contactRight form{
+/*.contactRight form{
     width: 100%;
     
-}
+} */
+
+
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -360,8 +410,8 @@ nav .fa-sharp{
         padding: 0;
     }
     #header {
-        background-image: url(./images/background_img/mobile_background.jpg);
-        background-size: 100% 100%;
+        background-image: url(./images/background_img/mobile_background_dark.jpg);
+        height: 900px;
         position: relative;
         padding: 0px;
         margin-right: 0px;
@@ -375,8 +425,8 @@ nav .fa-sharp{
         top: 0;
         left: 0;
         width: 100%;
-        height: 100px;
-        background-image: url(./images/background_img/mobile_background.jpg);
+        height: 900px;
+        background-image: url(./images/background_img/mobile_background_dark.jpg);
         opacity: 0.5;
         z-index: -1;
     }
@@ -395,20 +445,25 @@ nav .fa-sharp{
         margin-left: 0px;
     }
 
+    .container nav i{
+        color: white;
+        margin-right: 20px;
+    }
+
     .headerText{
-        margin-top: 100%;
+        margin-top: 300px;
         font-size: 15px;
     }
     .headerText h1{
-        font-size: 40px;
-        color: black;
-        margin-top: 5px;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        margin-top: 5px !important;
         padding: 0;
     }
     .headerText p {
-        color: #000000;
-        font-size: 18px;
-        text-shadow: 1px 1px 1px #ffffff; /* Add a text shadow with horizontal and vertical offsets */
+        color: #ffffff;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #323232; /* Add a text shadow with horizontal and vertical offsets */
     }
     nav .fa-sharp{
         display: block;
@@ -443,10 +498,12 @@ nav .fa-sharp{
     }
     .aboutColumn1{
         margin-bottom: 30px;
+        
     }
     
     .aboutColumn2{
         font-size: 13px;
+        margin-left: 20px;
     }
     .tabLinks{
         font-size: 15px;
@@ -457,6 +514,11 @@ nav .fa-sharp{
     .contactLeft, .contactRight{
         flex-basis: 100%;
     }
+
+    .contactLeft{
+        margin-top: 25px;
+    }
+
     .copyRight{
         font-size: 13px;
         margin-bottom: -10px;
@@ -468,17 +530,25 @@ nav .fa-sharp{
         text-shadow: 1px 1px 1px #000000;
     }
 
-    .contactRight{
+    /* .contactRight{
         margin-left: 0px;
-    }
+    } */
 
-    .contactRight h1{
+    /* .contactRight h1{
         margin-left: 100px;
         color: #00d0ff;
-    }
+    } */
 
     .tabContents ul{
         padding: 0;
+    }
+
+    .projectList div{
+        border-radius: 10px;
+    }
+
+    .tabTitles p{
+        margin-left: 40px;
     }
 
 }
