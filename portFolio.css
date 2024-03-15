@@ -13,7 +13,7 @@ body{
 }
 #header{
     width: 100%;
-    height: 750px;
+    height: 825px;
     background-image: url(./images/background_img/homepage_backgroung_img5.jpg);
     background-size: cover;
     background-position: center;
@@ -405,7 +405,7 @@ nav .fa-sharp{
     display: none; /* not display menu icon on pc */
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 450px){
     body{
         padding: 0;
     }
